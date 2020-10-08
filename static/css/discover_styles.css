@@ -1,0 +1,48 @@
+.section_discover {
+    padding: 20px 0px;
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+    overflow: hidden;
+}
+
+.folder_discover {
+    width: auto;
+    height: 100%;
+    place-items: center;
+    padding: 20px;
+}
+
+.folder_discover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.folder_discover h3 {
+    margin-top: 0.75rem;
+}
+
+.meta_discover {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+p.grid_row {
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+@media(min-width: 800px) {
+    .discover_grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+        grid-template-rows: 500px;
+    }
+
+    .discover_grid img {
+        height: 400px;
+    }
+}

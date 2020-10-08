@@ -1,0 +1,177 @@
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    height: 63px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 20px 16px;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.side_nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side_nav a {
+    padding: 10px 10px 10px 30px;
+    font-size: 22px;
+    color: #ccc;
+    display: block;
+    transition: 0.4s;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.side_nav a:hover {
+    color: #fff;
+}
+
+.side_nav .btn_close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.navbar_nav {
+    display: none;
+}
+
+.navbar_logo_mob {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar_logo_mob a {
+    display: block;
+}
+
+.navbar_slider {
+    display: block;
+}
+
+.ul.navbar_register {
+    list-style: none;
+}
+
+.navbar_register a {
+    display: block;
+    float: none;
+    text-transform: capitalize;
+}
+
+.fixed_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    box-shadow: lightgray;
+    z-index: 100;
+}
+
+.top_link {
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background: #333;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    color: #fff;
+    animation: bounce 2s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -100;
+}
+
+.show_link {
+    visibility: visible;
+    z-index: 100;
+}
+
+/* Footer nav */
+.footer_nav {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.footer_list li {
+    padding: 10px;
+}
+
+.footer_list li a {
+    color: #fff;
+}
+
+@media(min-width: 800px) {
+    .navbar .navbar_logo a {
+        display: block;
+        float: left;
+    }
+
+    .navbar_register a {
+        float: right;
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 20px 16px;
+        font-size: 17px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .navbar ul {
+        margin: 0;
+    }
+
+    .navbar_slider {
+        display: none;
+    }
+
+    .navbar_logo_mob {
+        display: none;
+    }
+
+    .navbar_nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar a {
+        margin-left: 20px;
+    }
+}
+
+
+
+
+
