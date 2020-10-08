@@ -15,18 +15,23 @@
             <div class="body_container">
                 <div class="gallery">
                     <?php
+
                         // getLoggedInUserName() from users_function.php
                         // countAllPictures() from pictures_functions.php
+
                     ?>
                     <h2><?= getLoggedInUserName(); ?>'s Pictures</h2>
                     <p><span><?= countAllPictures(); ?> photos </span><span><a href="<?= BASE_URL . 'users/profile.php?id=' . getLoggedInUserId(); ?>"><img class="pic_mini" src="../uploads/<?= getLoggedInUserName(); echo getLoggedInUserId(); ?>" alt=""></a></span></p>
                     <ul class="gallery_grid">
                         <?php
+
                             // getUserPictures() from pictures_functions.php
                             $pictures = getUserPictures();
                             $i = 1;
-                            if (!$pictures || mysqli_num_rows($pictures) == 0): ?>
-                                <p>No Pictures</p>
+                            if (!$pictures || mysqli_num_rows($pictures) == 0): 
+
+                        ?>
+                            <p>No Pictures</p>
                             <?php else: ?>
                             <?php while ($row = mysqli_fetch_array($pictures)): ?>
                             <li id="clickImg">
@@ -74,13 +79,16 @@
                                             <div>
                                                 <ul>
                                                     <?php
+
                                                         $pid = $row['pid'];
                                                         global $conn;
                                                         $sql = "SELECT *, comments.created_at AS comcreate FROM comments JOIN users ON comments.userID = users.id WHERE picID = '$pid' ORDER BY comcreate DESC";
                                                         $res = mysqli_query($conn, $sql);
-                                                        if (!$res || mysqli_num_rows($res) == 0): ?>
-                                                            <p>No Comments</p>
-                                                            <p>Be the first one to send some love</p>
+                                                        if (!$res || mysqli_num_rows($res) == 0): 
+                                                    
+                                                    ?>
+                                                        <p>No Comments</p>
+                                                        <p>Be the first one to send some love</p>
                                                     <?php 
 
                                                         else:
