@@ -1,8 +1,3 @@
-This document will outline the project and its requirements.
-The project started on June 23 2020.
-
-1. This is a Image application similar to pexels and unsplash. 
-
 Users:
 1. There will be one type of user, normal users, no admin users for this project.
 
@@ -25,9 +20,7 @@ The application will have the following databases:
 - galleries table
 - pictures table
 - categories table
-- comments table (galleries)
 - comments table (pictures)
-- messages table
 
 Users table
 - id int(11)
@@ -103,7 +96,6 @@ Pages
 Index.php
 - Randomized header image - showcase section, search bar
 - Randomized photos from different galleries
-- load more pictures after scroll to bottom
 
 Dashboard.php
 - See latest comments
@@ -134,4 +126,3 @@ picture.php
 
 discover.php
 - Popular collection
-- Randomize 10 different categories
